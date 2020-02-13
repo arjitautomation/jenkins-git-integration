@@ -7,9 +7,20 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>jenkins-git-integration Maven Webapp</name>
   <url>http://maven.apache.org</url>
- 
+  <dependencies>
+     <dependency>  
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>jenkins-git-integration</finalName>
+  </build>
+  <plugins>
   <plugin>
-              <groupId>org.owasp</groupId>
+  <groupId>org.owasp</groupId>
              <artifactId>dependency-check-maven</artifactId>
               <version>5.3.0</version>
               <executions>
@@ -20,19 +31,5 @@
                   </execution>
               </executions>
    </plugin> 
-
-
-  <dependencies>
-    
-    <dependency>
-      
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-  <build>
-    <finalName>jenkins-git-integration</finalName>
-  </build>
+  </plugins>
 </project>
